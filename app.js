@@ -86,22 +86,9 @@ table.prepend(thead);
 // const em7 =  new Employee(1006, "Ghazi Samer", "Finance", "Mid-Senior");
 // render(em7.id,em7.fullName,em7.dep,em7.level,em7.salary);
 
-function render(...rows) {
-    let tr = document.createElement("tr");
-    let persons = [];
-    for (const row of rows){
-        const td = document.createElement("td");
-        td.textContent = row ;
-        tr.append(td);
-        persons.push(row)
-
-    }
-    table.append(tr);
-    setLocalStorage(persons);
-}
 
 
-// events 
+// events table
 let submit = document.getElementById("submit");
 let id = document.getElementById("number")
 let fullname = document.getElementById("fullname")
@@ -120,6 +107,19 @@ submit.addEventListener("click", (e) => {
     level.value = level[0].value;
     imgUrl.value = "";
     })
+    function render(...rows) {
+        let tr = document.createElement("tr");
+        let persons = [];
+        for (const row of rows){
+            const td = document.createElement("td");
+            td.textContent = row ;
+            tr.append(td);
+            persons.push(row)
+    
+        }
+        table.append(tr);
+        setLocalStorage(persons);
+    }
 
 let count = 0;
 function setLocalStorage (...persons){
@@ -128,6 +128,6 @@ function setLocalStorage (...persons){
         count ++;
     }
 }
+//end  event table
 
-// event card 
 
