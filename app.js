@@ -131,3 +131,5 @@ function setLocalStorage (...persons){
 //end  event table
 
 // event card 
+let form = document.getElementById("form");
+let cardone = document.getElementById("cardone");
