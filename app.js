@@ -112,8 +112,8 @@ let level = document.getElementById("level")
 submit.addEventListener("click", (e) => {
     e.preventDefault()
     
-    const emp = new Employee(number.value,fullname.value,Department.value,level.value,imgUrl.value);
-    render(number.value,fullname.value,Department.value,level.value,emp.salary);
+    let emad = new Employee(number.value,fullname.value,Department.value,level.value,imgUrl.value);
+    render(number.value,fullname.value,Department.value,level.value,emad.salary);
     number.value = "";
     fullname.value = "";
     department.value = department[0].value ;
