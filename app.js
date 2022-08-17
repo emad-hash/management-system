@@ -130,4 +130,4 @@ function setLocalStorage (...persons){
 }
 //end  event table
 
-
+// event card 
