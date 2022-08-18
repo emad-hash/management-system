@@ -86,8 +86,6 @@ table.prepend(thead);
 // const em7 =  new Employee(1006, "Ghazi Samer", "Finance", "Mid-Senior");
 // render(em7.id,em7.fullName,em7.dep,em7.level,em7.salary);
 
-
-
 // events table
 let submit = document.getElementById("submit");
 let id = document.getElementById("number")
@@ -129,8 +127,8 @@ function setLocalStorage (...persons){
     }
 }
 //end  event table
-
 // event card 
 let form = document.getElementById("form");
+
 
 
